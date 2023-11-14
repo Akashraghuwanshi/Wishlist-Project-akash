@@ -78,3 +78,19 @@ body{
     height: 70vh;
     overflow-y: auto
 }
+
+@media screen and (max-width: 568px) {
+    .main{
+        /* border:2px solid red; */
+        
+        padding:2rem 0;
+        width:50vw;
+        margin-left: 30vw;
+        transform: translateX(-50%);
+    }
+    .todos-container{
+        
+        width:70vw;
+
+    }
+}
