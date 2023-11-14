@@ -58,12 +58,22 @@ function renderTodoList(todoList){
       
       /* Destructuring object concept */
     showTodos.innerHTML = todoList.map(({id,todo,isCompleted})=>
-    `<div class=" todo relative"><input id="item-${id}" type="checkbox" data-key=${id}
+    `<div class=" todo relative ">
+    <input 
+    id="item-${id}" 
+    type="checkbox" 
+    class="t-checkbox"
+    data-key=${id}
     ${isCompleted ? "checked":""}> 
-    <label for="item-${id}" class="label todo-text t-pointer ${isCompleted ? "checked-todo":""}" data-key=${id}>${todo}
+    <label 
+    for="item-${id}" 
+    class="label 
+    todo-text 
+    t-pointer ${isCompleted ? "checked-todo":""}" data-key=${id}>
+    ${todo}
     </label>
-    <button class="button cursor absolute right-0">
-    <span data-todokey=${id} class="btn-Del material-icons-outlined">
+    <button class="button cursor absolute right-0 ">
+    <span data-todokey=${id} class="btn-Del material-icons-outlined ">
     delete
     </span>
     </button>
