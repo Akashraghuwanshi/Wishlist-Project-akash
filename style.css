@@ -88,6 +88,9 @@ body{
         margin-left: 30vw;
         transform: translateX(-50%);
     }
+    .input{
+        width:80vw;
+    }
     .todos-container{
         
         width:70vw;
